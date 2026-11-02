@@ -1,6 +1,17 @@
 # Guitar Supplier Management System
 
-A console-based Java application for managing guitar suppliers and inventory. It supports creating, viewing, updating, and deleting suppliers and guitar products stored in MySQL.
+> Independently developed in **2024** by Jabez Timothy Apilado.
+
+A console-based Java application for managing guitar suppliers and inventory. The system persists supplier and product data in MySQL and provides CRUD workflows through a menu-driven interface.
+
+## Project details
+
+| | |
+|---|---|
+| **Year developed** | 2024 |
+| **Project type** | Independent academic project |
+| **Interface** | Java console application |
+| **Database** | MySQL via JDBC |
 
 ## Features
 
@@ -9,6 +20,13 @@ A console-based Java application for managing guitar suppliers and inventory. It
 - Browse products by supplier or guitar type
 - Supports acoustic, electric, and bass guitars
 - Initializes the database tables and sample data on first run
+
+## What I built
+
+- Object-oriented domain models for suppliers and acoustic, electric, and bass guitars
+- DAO and manager layers for database-backed supplier and product operations
+- Custom input validation and exception handling for user-entered data
+- Database initialization that creates the schema, tables, and starter records when needed
 
 ## Built with
 
@@ -52,6 +70,12 @@ A console-based Java application for managing guitar suppliers and inventory. It
 
 The configured MySQL user needs permission to create the database and tables on the first run.
 
+## Database behavior
+
+On startup, the application connects to MySQL and creates the `guitar_management_db` database if it does not already exist. It then verifies the `suppliers` and `products` tables, creates them when required, and inserts starter supplier and product records.
+
+Database credentials are intentionally supplied through environment variables and are not stored in this repository.
+
 ## Project structure
 
 ```text
@@ -65,7 +89,8 @@ src/com/guitar/
 
 ## Author
 
-**Jabez Timothy Apilado** — [GitHub](https://github.com/jabezapilado)
+**Jabez Timothy Apilado** — Independent developer, 2024
+[GitHub](https://github.com/jabezapilado)
 
 ## Acknowledgements
 

@@ -8,6 +8,7 @@ lib/
 # Local database configuration
 .env
 .env.*
+!.env.example
 
 # IDE and operating-system files
 .vscode/
