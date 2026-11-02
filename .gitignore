@@ -1,0 +1,16 @@
+# Build output
+bin/
+*.class
+
+# Local dependencies
+lib/
+
+# Local database configuration
+.env
+.env.*
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+._*
